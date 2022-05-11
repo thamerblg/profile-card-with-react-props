@@ -1,13 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@300;400;500;700&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background: linear-gradient(to right bottom, black, rgb(88, 173, 243));
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.gradient:before {
+  content: "";
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 15%, 0 35%);
+  background: #ccc;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
